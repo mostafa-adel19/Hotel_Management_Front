@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+                <link rel ="icon" type = "img/png" href="./imgs/spa_24dp_78A75A_FILL0_wght400_GRAD0_opsz24.png">
+
+        <link rel="stylesheet" href="css/core.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" id="theme">
+        
+        <link rel="stylesheet" href="css/regular-lineicons/lineicons-free.css">
+        <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/homeLDthemes.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">LOTUS</div>
+            <div class="nav">
+                <ul>
+                    <a href="index.html">
+                    <li class="active desktop">home</li></a>
+                    <a href="./pages/booking.html">
+                    <li class="desktop">booking</li></a>
+                    <a href="pages/utilities.html">
+                    <li class="desktop hide">Utilities</li></a>
+                    <a href="./pages/Rooms.html">
+                    <li class="desktop">Rooms</li></a>
+                    <a href="pages/aboutus.html">
+                    <li class="desktop hide">about us</li></a>
+                    <a href="./pages/profile.html">
+                    <li class="desktop">Profile</li></a>
+                    <div class="theme">
+                        <img src="imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
+                        <img src="imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
+                    </div>
+                    <a onclick="shownav()">
+                    <li class="listForMobile">
+                        <i class="lni lni-menu-hamburger-1"></i>
+                    </li>
+                    </a>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="navlistformobile" id="navformobile">
+                <a onclick="backbutton()" style="border-radius : 10px;border : solid 1px #D9BB80; margin:10px 30%"><i class="fa-solid fa-arrow-right-long"></i></a>
+                <div class="themenavmobile">
+                    <img src="imgs/sun.png" class="src" onclick="lightTheme()" id="lightBtn">
+                    <img src="imgs/moon.png" class="src" onclick="darkTheme()" id="darkBtn">
+                </div>
+                <a href="index.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">home</li></a>
+                <a href="pages/booking.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">booking</li></a>
+                <a href="pages/utilities.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">Utilities</li></a>
+                <a href=./pages/Rooms.html><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">Rooms</li></a>
+                <a href="pages/contact.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">contact us</li></a>
+                <a href="pages/aboutus.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">about us</li></a>
+                <a href="pages/profile.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">Profile</li></a>
+                <a href="pages/login.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">login</li></a>
+                <a href="pages/signup.html"><li style="border-bottom : solid 1px #D9BB80; border-radius : 10px">sign up</li></a>
+            </div>
+            <!-- welcoming image section -->
+            <div class="hotelImage">
+                <div class="audiobuttons">
+                    <audio id="seasound" src="audio/soundbeach.mp3"></audio>
+                    <button type="button" onclick="audiopause()" id="playbutton" style="display : none">
+                        <i class="fa-solid fa-volume"></i>
+                    </button>
+                    <button type="button" onclick="audioplay()" id="pausebutton">
+                        <i class="fa-solid fa-volume-xmark"></i>
+                    </button>
+                </div>
+                <video src="Beach (1).mp4" autoplay muted loop class="backgroundvideos"></video>
+                <div class="welcomeSection">
+                    <h2 class="slogan">
+                        Book a place that was made
+                        for the <span style="color : #ffd277;font-weight : 600;">Elite</span>
+                    </h2>
+                    <p class="sloganDescription">
+                        in LOTUS you will be in the place what
+                        you want to be in 
+                        <a class="book-now" style="border-bottom : white solid 1px; " href="pages/booking.html">Book now</a> 
+                    </p>
+                    <div class="btnsLS">
+                        <a href="pages/login.html"><button class="logIn">login</button></a>
+                        <a href="pages/signup.html"><button class="signUp">signup</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- END welcoming image section -->
+            <div class="fatherhotelimg">
+                <div class="hotelimage"></div>
+                <div class="descrption">
+                    LOTUS , one of the most luxurius places
+                    in the middle east and one of the top 10
+                    of best tourism places in world , since 1840
+                </div>
+            </div>
+            <div class="visitors">
+                <div>
+                    <h2>why us</h2>
+                </div>
+                <div>
+                    <h3><span>+23,000</span> Visitors</h3>
+                    <h3><span>+12</span> patnerships</h3>
+                </div>
+            </div>
+            <div class="stars">
+                <span class="starsTitle" >one of the highest rates</span> 
+                <span class="starsIcon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </span>
+            </div>
+        </main>
+        <footer>
+            <div class="firstRow">
+                <div class="footerForDesktop">
+                    <div class="logoFooter">
+                        <span>LOTUS</span>
+                        <br>
+                        <div class="mail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span style="margin-left : 5px;">contact@lotus.com</span>
+                        </div>
+                    </div>
+                    <div class="quicklinks">
+                        <div class="footerWord">QUICK LINKS</div>
+                        <div class="links">
+                            <ul>
+                                <a href="./index.html"><li class="listQuickLinks l1">home</li></a>
+                                <a href="./pages/booking.html"><li class="listQuickLinks l2">booking</li></a>
+                                <a href="./pages/profile.html"><li class="listQuickLinks l3">Profile</li></a>
+                                <a href="./pages/utilities.html"><li class="listQuickLinks l3">Utilities</li></a>
+                                <a href="./pages/Rooms.html"><li class="listQuickLinks l3">Rooms</li></a>
+                                <a href="./pages/signup.html"><li class="listQuickLinks l4">sign up</li></a>
+                                <a href="./pages/login.html"><li class="listQuickLinks l5">log in</li></a>
+                                <a href="./pages/aboutus.html"><li class="listQuickLinks">about us</li></a>
+                                <a href="./pages/contact.html"><li class="listQuickLinks">Contact us</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="massage">
+                        <span class="footerWord">OUR SLOGAN</span><br>
+                        <span class="sloganFooter">
+                            Book a place that was made for the Elite
+                        </span>
+                    </div>
+                </div>
+                <!--For Mobile-->
+                <div class="mobileLinks">
+                    <div class="links">
+                        <span class="footerWord">QUICK LINKS</span>
+                            <ul>
+                                <a href="./index.html"><li class="listQuickLinks l1">home</li></a>
+                                <a href="./pages/booking.html"><li class="listQuickLinks l2">booking</li></a>
+                                <a href="./pages/profile.html"><li class="listQuickLinks l3">Profile</li></a>
+                                <a href="./pages/utilities.html"><li class="listQuickLinks l3">Utilities</li></a>
+                                <a href="./pages/Rooms.html"><li class="listQuickLinks l3">Rooms</li></a>
+                                <a href="./pages/signup.html"><li class="listQuickLinks l4">sign up</li></a>
+                                <a href="./pages/login.html"><li class="listQuickLinks l5">log in</li></a>
+                                <a href="./pages/aboutus.html"><li class="listQuickLinks">about us</li></a>
+                                <a href="./pages/contact.html"><li class="listQuickLinks">Contact us</li></a>
+                            </ul>
+                        </div>
+                        <div class="massage">
+                            <span class="footerWord">OUR SLOGAN</span>
+                            <p>Elite service for the
+                            Elite People</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logoFooterForMobile">
+                    <div class="logoContainerForMobile">
+                        <span>LOTUS</span>
+                    </div>
+                    <div class="mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span style="margin-left : 5px;">contact@lotus.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="secondRow">
+                <div class="social">
+                    <a href=""><i class="lni lni-linkedin"></i>
+                    <a href=""><i class="lni lni-facebook"></i>
+                    <a href=""><i class="lni lni-instagram"></i>
+                    <a href=""><i class="lni lni-youtube"></i>
+                </div>
+                <div class="copyright">
+                    &copy; 2026 COPYRIGHT RESERVED
+                </div>
+            </div>
+        </footer>
+        <script src="js/core.js"></script>
+    </body>
+</html>

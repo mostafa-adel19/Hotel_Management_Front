@@ -1,0 +1,181 @@
+main {
+    padding: 70px 10%;
+    background-image : url("../imgs/booking.jpeg");
+    background-size : cover;
+}
+.big-container-booking{
+    display : flex;
+    width : 100%;
+    flex-direction :column;
+    gap : 30px;
+}
+input,select {
+    padding : 15px;
+}
+input { 
+    display : block;
+    width : 100%;
+    background-color : rgb(238, 238, 238);
+    border : none;
+    border-radius:7px;
+    translate: 0.2s;
+}
+input:hover{
+    transform: scale(1.02);
+}
+.container {
+    display : block;
+}
+.window {
+    width : 35%;
+    background-color : white;
+    box-shadow : 0 2px 25px;
+    border-radius : 5px;
+    transition: 0.25s;
+}
+.window:hover{
+    transform: translateY(-2px);
+    box-shadow : 0 0 5px 0 black;
+}
+.booking-title {
+    font-size : 25px;
+    text-align : center;
+    padding : 20px;
+    display : block;
+    font-family : font3;
+    font-weight : 100;
+    padding-bottom : 0;
+}
+label {
+    display : block;
+    font-weight : 400px;
+}
+form {
+    font-family : font2;
+    padding : 20px;
+    padding-top : 10px;
+    font-weight : 100;
+}
+select { 
+    width : 100%;
+    display : block;
+    font-size : 15px;
+    background-color : rgb(238, 238, 238);
+    border : none;
+}
+.form-container1,.form-container2 {
+    display : flex;
+    justify-content : space-between;
+    margin-bottom : 10px;
+}
+.form-cont1-1,.form-cont1-2{
+    width : 46%;
+}
+.form-cont1-1 > div,.form-cont1-2 > div,form > label{
+    margin-top : 5px;
+    margin-bottom : 5px;
+}
+.form-cont2-1,.form-cont2-2,.form-cont2-3{
+    width : 30%;
+}
+.form-cont2-1 > div,.form-cont2-2 > div,.form-cont2-3 > div,.form-cont1-1 > div,.form-cont1-2 > div,label{
+    color : rgb(110, 110, 110);
+    text-transform :capitalize;
+}
+button {
+    margin-top : 15px;
+    display : block;
+    background-color : #b5975c;
+    color : white;
+    border: none;
+    width :100%;
+    padding : 15px;
+    border-radius:7px;
+    transition : 0.2s;
+}
+button:hover{
+    margin-top : 15px;
+    display : block;
+    color : white;
+    background-color : #4B6F68;
+}
+h1 {
+    font-size : 33px;
+    font-weight : 100;
+    color : white;
+    font-family : font3;
+    text-transform : uppercase;
+    text-shadow : 3px 3px 5px black;
+    border-bottom : none !important;
+}
+h4 {
+    font-size : 15px;
+    font-weight : 100;
+    text-transform :capitalize;
+    font-family : font2;
+    color : rgba(255, 255, 255, 0.6)
+}
+footer {
+    margin-top : 0px;
+}
+.firstRow {
+    border-radius : 0;
+}
+@media screen and (max-width : 1145px) {
+    .window {
+        width : 45%;
+    }
+}
+#bookingAlerts {
+    background-color : rgb(190, 101, 101);
+    font-family : font2;
+    color : white;
+    transition : 0.3s;
+    border-radius : 5px;
+}
+#successbooking {
+    background-color : rgb(45, 152, 95);
+    font-family : font2;
+    color : white;
+    transition : 0.3s;
+    border-radius : 5px;
+}
+#bookingAlerts span,#successbooking{
+    padding :3px 10px;
+    display : none;
+}
+#bookingAlerts,#successbooking {
+    font-size : 12px;
+    font-family : font2;
+}
+form > div > input {
+    margin-bottom : 5px;
+}
+@media screen and (max-width : 850px) {
+    .window{
+        width : 100%;
+    }
+    main{
+        padding : 70px 25%;
+    }
+}
+@media screen and (max-width : 686px) {
+    .window{
+        width : 100%;
+    }
+    main{
+        padding : 70px 20%;
+    }
+}
+
+@media screen and (max-width : 502px) {
+    main{
+        padding : 70px 4%;
+    }
+    .booking-title {
+        font-size : 20px;
+    }
+    input {
+        font-size :  12px;
+    }
+}
