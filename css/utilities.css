@@ -108,18 +108,18 @@ header {
     margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
-    font-size: 50px;
-    font-family : font3;
+    font-size: 80px;
+    font-family : Bell MT;
     
 }
 
 .second-para {
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     width : 50%;
     margin : 5px 25%;
-    font-family : font2;
-    font-weight : 100;
+    font-family : font1;
+   
     letter-spacing: 2px;
 }
 
@@ -134,7 +134,7 @@ header {
     border-radius: 25px;
     font-size: 30px;
     margin-bottom: 30px;
-    font-family : font3;
+    font-family : Bell MT;
     border-bottom: #4B6F68 3px solid;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -228,22 +228,39 @@ header {
 .img-sea,
 .img-cabanas {
     background-size: cover;
-    box-shadow: 0px 18px 18px rgba(0, 0, 0, 0.57);
+    box-shadow: 0px 18px 18px rgba(0, 0, 0, 0.65);
     background-position: center;
     transition: transform 0.6s ease;
     position: relative;
 }
 
-/*Div of images>>hover */
-.img:hover,
+/*Div of images & description>>hover */
+
 .img2:hover,
 .img-gym:hover,
-.img-sea:hover,
 .img-roof:hover,
-.img-spa:hover,
-.img-cabanas:hover {
-    transform: scale(1.1);
+.descri-cabanas:hover,
+.descri-sea:hover,
+.descri-spa:hover,
+.descri:hover
+{
+    transform:translatex(-50px) scale(1.1);  
     z-index: 20;
+  
+    /* تخليها تطلع فوق اللي جنبها مهمه يا رجاله* */
+}
+.img:hover,
+.img-cabanas:hover,
+.img-sea:hover,
+.img-spa:hover,
+.descri2:hover,
+.descri-gym:hover,
+.descri-roof:hover
+
+{
+    transform:translatex(50px) scale(1.1);  
+    z-index: 20;
+  
     /* تخليها تطلع فوق اللي جنبها مهمه يا رجاله* */
 }
 
@@ -322,7 +339,7 @@ header {
         font-size: 14.5px;
 
     }
-
+/*
     .img:active,
     .img-spa:active,
     .img-sea:active,
@@ -338,7 +355,7 @@ header {
         transition: transform 0.3s ease;
         transform: translateX(-100px) scale(1.1);
         z-index: 90;
-    }
+    }*/
 }
 
 /* mobile */
@@ -364,13 +381,13 @@ header {
         font-size: 12px;
 
     }
-
+/*
     .img:active,
     .img-spa:active,
     .img-sea:active,
     .img-cabanas:active {
         transition: transform 0.3s ease;
-        transform: translateX(100px) scale(1.1);
+        transform: translateX(100px) ;
         z-index: 90;
     }
 
@@ -378,10 +395,11 @@ header {
     .img2:active,
     .img-gym:active {
         transition: transform 0.3s ease;
-        transform: translateX(-100px) scale(1.1);
+        transform: translateX(-100px);
         z-index: 90;
     }
-}
+*/
+    }
 
 .firstRow {
     display: block;
@@ -731,7 +749,7 @@ i {
 @media screen and (max-width : 800px) {
     .rest1, .rest2,
     .beach, .gym, .spa, .roof, .cabanas,.utilities_table {
-        width: 80%;
+        width: 90%;
         margin-left : auto ;
         margin-right : auto ;
     }
@@ -756,6 +774,7 @@ i {
 @media screen and (max-width : 680px) {
     .rest1, .rest2,
     .beach, .gym, .spa, .roof, .cabanas,.utilities_table {
+       
         font-size : 10px;
         
     }
@@ -766,7 +785,7 @@ i {
     .img-sea,
     .img-spa,
     .img-cabanas{
-        width: 30%;
+        width: 50%;
     }
     .descri,
     .descri2,
@@ -775,7 +794,7 @@ i {
     .descri-sea,
     .descri-spa,
     .descri-cabanas {
-        width: 70%;
+        width: 50%;
     }
 }
 @media screen and (max-width : 560px) {
